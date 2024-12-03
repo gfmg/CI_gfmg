@@ -1,27 +1,30 @@
+# The original code was developed using GitHub Copilot. I needed to tweak the 
+# permissions to make it work, thanks to the lecture by Ian.
+
 name: Weather Data Workflow
 
 on:
   schedule:
-    - cron: '0 10 * * *'
+    - cron: '0 10 * * *' #Run the code daily at 10:00 UTC
   workflow_dispatch:
 
 permissions:
-    contents: write
+    contents: write # This lines were needed to make the code work. GitHub was returning an issue 'Process completed with exit code 128.'
 
 jobs:
   run-weather-script:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # We will use Ubuntu as the runner
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-            persist-credentials: True
+            persist-credentials: True # Again, change in permissions was necessary to make it work
 
       - name: Run weather.sh script
-        run: ./weather.sh
+        run: ./weather.sh #The name of the file to run! 
 
-      - name: Configure Git
+      - name: Configure Git # The following lines of code commit the changes to GitHub and push them to the repository
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
@@ -29,7 +32,7 @@ jobs:
       - name: Add and commit changes
         run: |
           git add .
-          git commit -m "Downloading daily weather data"
+          git commit -m "Downloading daily Athenry weather data"
 
       - name: Push changes to repository
         env:
