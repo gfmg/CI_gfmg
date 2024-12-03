@@ -1,0 +1,30 @@
+# Attempting to automate the Jupyter Notebook execution using GitHub Actions
+# This way, after downloading the dily weather data from the Met Éirean website, 
+# the graphs will be automatically updated. 
+
+name: Weather Analysis
+
+on:
+    workflow_run:
+        workflows: ["weather-data.yml"]
+        types:
+            - completed
+
+jobs:
+    run-notebook:
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: Checkout repository
+          uses: actions/checkout@v2
+
+        - name: Set up Python
+          uses: actions/setup-python@v4
+          with:
+            python-version: '3.x'
+
+        - name: Install dependencies
+          run: pip install -r requirements.txt
+
+        - name: Run Jupyter Notebook
+          run: jupyter nbconvert --to notebook --execute weather.ipynb --output weather_output.ipynb
