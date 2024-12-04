@@ -1,0 +1,45 @@
+name: Update Weather Analysis Notebook
+
+on:
+  workflow_run:
+    workflows:
+      - Weather Data Workflow  # The exact name of your weather-data.yml workflow
+    types:
+      - completed
+
+jobs:
+  execute-notebook:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Python environment
+      - name: Set Up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'  # or the Python version of your choice
+
+      # Step 3: Install Dependencies
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Step 4: Run Jupyter Notebook
+      - name: Execute Jupyter Notebook
+        run: |
+          jupyter nbconvert --to notebook --execute weather.ipynb --output updated_weather.ipynb
+
+      # Step 5: Commit and Push Updated Notebook
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "github-actions@users.noreply.github.com"
+          git add weather.ipynb
+          git commit -m "Automated update of weather analysis notebook"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

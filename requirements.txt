@@ -1,3 +1,5 @@
 pandas 
 datetime 
 matplotlib 
+jupyter
+nbconvert

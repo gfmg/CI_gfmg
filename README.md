@@ -9,7 +9,6 @@
 </figure>
 
 <h2 align= left>Purpose</h2>
-
 The objectives of this repository could be summarized:  
 
 1. Learn the command line interface environment (bash, cmd; including creation, manipulation and how to move data). 
@@ -20,8 +19,7 @@ The objectives of this repository could be summarized:
 
 
 <h2 align= left>Structure</h2>
-
-The repository contains is structured as follows: 
+The repository is structured as follows: 
 
 - `weather.ipynb`: this jupyter notebooks contains a description of each of the weekly tasks requested as part of the course. It also includes a brief analysis of the weather data downloaded for the Athenry station. Additionally, some important notes are included about the development of the project, which objective was the automatization of the download of the weather data using GitHub Workflows 
 
@@ -32,3 +30,11 @@ The repository contains is structured as follows:
 - `img`: folder to store any images used in the README.md or Jupyter files 
 
 - `.github/workflows`: this folder contains the ```.yml``` code to automate the download of th daily weather data from the Athenry station using github actions. 
+
+<h2 align= left>Installation</h2>
+Simply clone the repository from github by copying the url of the repository and: 
+
+```git 
+git clone https://github.com/gfmg/CI_gfmg.git 
+```
+
