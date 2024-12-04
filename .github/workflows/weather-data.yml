@@ -21,6 +21,15 @@ jobs:
         with:
             persist-credentials: True # Again, change in permissions was necessary to make it work
 
+        # Setting up Python and installing required dependencies to run the Jupiter notebook      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+          
+      - name: Install dependencies
+        run: pip insall -r requirements.txt
+
       - name: Run weather.sh script
         run: ./weather.sh #The name of the file to run! 
 
