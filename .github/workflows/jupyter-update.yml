@@ -31,7 +31,7 @@ jobs:
       # Step 4: Run Jupyter Notebook
       - name: Execute Jupyter Notebook
         run: |
-          jupyter nbconvert --to notebook --execute weather.ipynb --output updated_weather.ipynb
+          jupyter nbconvert --to notebook --execute weather.ipynb --output weather.ipynb
 
       # Step 5: Commit and Push Updated Notebook
       - name: Commit and Push Changes
