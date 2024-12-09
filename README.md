@@ -45,8 +45,9 @@ pip3.13 install package # Alternative based on your currently installed Python v
 # See here: https://stackoverflow.com/questions/2812520/dealing-with-multiple-python-versions-and-pip
 ```
 If you do not have `Git`, `VScode` or `Python` installed here are some useful links: 
-- **Git**: https://git-scm.com/downloads
-- **VS Code**: https://code.visualstudio.com/ 
-- **Python**: https://www.python.org/; https://realpython.com/installing-python/ 
+- <ins>Git</ins>: https://git-scm.com/downloads
+- <ins>VS Code</ins>: https://code.visualstudio.com/ 
+- <ins>Python</ins>: https://www.python.org/; https://realpython.com/installing-python/ 
+
 
 2. **Using Github Codespaces**: on this repository, click on the green button with the `Code` name on it. Select CodeSpaces, and click the + button. This will create a virtual environment in which you can run the Jupyter notebook. CodeSpaces will open a virtual VS Code window in your browser and when trying to run the cells within the notebook, it will automatically prompt you with messages about the suggested and necessary extensions to install. 
