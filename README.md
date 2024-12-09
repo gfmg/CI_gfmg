@@ -16,7 +16,7 @@ The objectives of this repository could be summarized:
 4. **Automate processes (e.g. downloading data) using github workflows.**
 
 
-## Structure
+## Structure :folder:
 The repository is structured as follows: 
 
 - `weather.ipynb`: this jupyter notebooks contains a description of each of the weekly tasks requested as part of the course. It also includes a brief analysis of the weather data downloaded for the Athenry station. Additionally, some important notes are included about the development of the project, which objective was the automatization of the download of the weather data using GitHub Workflows 
