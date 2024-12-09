@@ -1,4 +1,4 @@
-# <center>2024 Computer infrastructure repository :computer: <br/> Guillermo F. Martin Gonzalez </center>
+# 2024 Computer infrastructure repository :computer: <br/> Guillermo F. Martin Gonzalez
 Repository of the "Computer infrastructure" course as part of the Higher Diploma in computing for Data Analytics by Atlantic Technical University (ATU).  All code has been developed by the repository owner: Guillermo F. Martin Gonzalez. Relevant references for external information are appropriately included.</p>
 
 <figure align="center">
