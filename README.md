@@ -13,7 +13,7 @@ The objectives of this repository could be summarized:
 
 2. **Compare commonly available software infrastructures and architectures.**
 
-4. **Automate processes (e.g. downloading data) using github workflows.**
+4. **Automate processes (e.g. downloading data) using GitHub workflows.**
 
 ## :file_folder: Structure
 The repository is structured as follows: 
@@ -26,12 +26,12 @@ The repository is structured as follows:
 
 - `img`: folder to store any images used in the README.md or Jupyter files 
 
-- `.github/workflows`: this folder contains the ```.yml``` files to automate the download of the daily weather data from the Athenry station (```weather-data.yml```) and to update the jupyter notebook (```jupyter-update.yml```) using github actions. 
+- `.github/workflows`: this folder contains the ```.yml``` files to automate the download of the daily weather data from the Athenry station (```weather-data.yml```) and to update the jupyter notebook (```jupyter-update.yml```) using GitHub actions. 
 
 ## :rocket: Installation and use
 You can run and modify the content of this repository in two ways: 
 
-1. **Locally in your machine**: simply clone the repository from github by copying the url of the repository as: 
+1. **Locally in your machine**: simply clone the repository from GitHub by copying the url of the repository as: 
 
 ```bash
 git clone https://github.com/gfmg/CI_gfmg.git
@@ -51,4 +51,4 @@ If you do not have `Git`, `VScode` or `Python` installed here are some useful li
 - <ins>Python</ins>: https://www.python.org/; https://realpython.com/installing-python/ 
 
 
-2. **Using Github Codespaces**: on this repository, click on the green button with the `Code` name on it. Select CodeSpaces, and click the + button. This will create a virtual environment in which you can run the Jupyter notebook. CodeSpaces will open a virtual VS Code window in your browser and when trying to run the cells within the notebook, it will automatically prompt you with messages about the suggested and necessary extensions to install. 
+2. **Using GitHub Codespaces**: on this repository, click on the green button with the `Code` name on it. Select CodeSpaces, and click the + button. This will create a virtual environment in which you can run the Jupyter notebook. CodeSpaces will open a virtual VS Code window in your browser and when trying to run the cells within the notebook, it will automatically prompt you with messages about the suggested and necessary extensions to install. 
