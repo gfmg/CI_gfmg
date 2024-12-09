@@ -40,7 +40,8 @@ cd your-directory
 The way the repository and code is organized will automatically download and update the jupyter notebook daily in the repository. Remember, that in order for you to locally update the downloaded data and notebook you need to `git pull`. **Also important**, you need to have installed `VS Code` (or any other text editor) and `Python` to run the Jupyter notebook. You may also need to install the Python packages outlined in the `requirements.txt` file:        
 
 ```bash  
-python -m pip install package
+#Two options here: 
+python -m pip install package 
 pip3.13 install package # Alternative based on your currently installed Python version 
 # See here: https://stackoverflow.com/questions/2812520/dealing-with-multiple-python-versions-and-pip
 ```
