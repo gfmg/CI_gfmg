@@ -3,3 +3,5 @@ datetime
 matplotlib 
 jupyter
 nbconvert
+numpy
+windrose
